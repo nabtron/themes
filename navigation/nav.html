@@ -1,0 +1,26 @@
+<!-- v: 0.1 -->
+
+<div id="header">
+    <div id="top" class="mobile-hide">
+        <div id="logo" class="col-md-6 col-xs-12 pull-left padding-15">
+            <a href="http://nabtron.com/">
+                <h1>Write in Urdu online</h1> </a>
+        </div>
+        <div class="col-md-6 col-xs-12 pull-left padding-15">
+            <h2>Online Urdu Typing</h2> </div>
+        <div class="clear-both"></div>
+    </div>
+    <nav id="toggle-menu" class="menu"> <a href="#" id="pull" onclick="pullnav();">Nabtron</a>
+        <ul id="topmenu" class="clearfix">
+            <li><a href="http://nabtron.com/">Home</a></li>
+            <li><a href="http://nabtron.com/about.html">About</a></li>
+            <li><a href="http://nabtron.com/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<script>
+        function pullnav(){
+            document.getElementById("topmenu").classList.toggle("display-block");
+        }
+</script>
