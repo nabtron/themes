@@ -1,0 +1,50 @@
+/* v: 0.1 */
+
+nav a#pull {
+    display: none;
+    color: white;
+    text-decoration: none;
+    text-indent: 25px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 719px) {
+    nav {
+        border-bottom: 0;
+        font-size: 1.2em;
+    }
+    nav ul {
+        position: fixed;
+        z-index: 20;
+        width: 100%;
+        display: none;
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #110080;
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull:after {
+        content: "";
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAC9JREFUeNpi/P//PwM1AQsQU9VEJgYqg8FvICgMGUeel0eTzWiyGU02Qz/ZAAQYAOPcBjEdYroKAAAAAElFTkSuQmCC') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+        border-top: 1px solid #576979;
+    }
+    nav li a {
+        color: #fff!important;
+        text-align: left;
+        text-indent: 25px;
+    }
+}
